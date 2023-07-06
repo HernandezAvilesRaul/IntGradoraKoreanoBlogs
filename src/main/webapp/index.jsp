@@ -5,88 +5,67 @@
 <!DOCTYPE html>
 <html lang="es">
     <jsp:include page="header.jsp"></jsp:include>
-    <style>
-        body {
-            text-align: center;
-            line-height: 1.5;
-            background: #f0e8db;
-        }
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Pasteleria Coreano Blogs</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src='main.js'></script>
+        <style>
+            .pastel{
+                position: relative;
+                top: -200px;
+                right: -650px;
+            }
+        </style>
+    </head>
+    <body style="max-width: 1300px; margin: 0 auto; overflow: hidden;">
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="img/cakeicon.png" alt="Logo" height="50px" width="50px">
+                    Pastelería Coreano Blogs
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Recetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registro.jsp">Registrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pasteles.html">Pasteles</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section style="background-color:lightgoldenrodyellow;">
+        <br><br><br><br><br><br>
+        <h6 style="transform: translateX(20%); color: orange;">----- COREANO BLOGS</h6>
+        <h1 style="font-family: 'Times New Roman', Times, serif; transform: translateX(20%); font-size: 80px;">Pasteleria</h1>
+        <img class="pastel" src="img/CakeMinecraft.webp" alt="">
+        <h6 style="position: relative;
+            top: -300px;
+            right: -270px;
+            white-space: pre-line;">Sumérgete en el apasionante mundo de la pastelería <br> y descubre un universo de sabores exquisitos y creatividad <br> sin límites. En Pastelería Coreano Blogs, te ofrecemos una <br> ventana al fascinante arte de la repostería, donde la tradición <br> se combina con la innovación para brindarte experiencias culinarias únicas.</h6>
+        <div class="bd-example m-0 border-0" style="position: relative; right: -270px; top: -250px;">
+            <a href="registro.jsp"><button type="button" class="btn btn-warning"><img src="img/cart.png" alt="" height="15px" width="15px">Registrar</button></a>
+            <a href="catalogo.html" style="margin-left: 30px;"><button type="button" class="btn btn-outline-warning"><img src="img/cake.png" alt="" height="30px" width="30px">Recetas</button></a>
+        </div>
+    </section>
 
-        img {
-            max-width: 100%;
-            height: 250px;
-            display: block;
-            margin: 0 auto;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-            background-color: #f9f9f9;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
 
-        ul li {
-            flex: 1;
-            padding: 10px;
-        }
-
-        h1 {
-            font-family: "Comic Sans MS", sans-serif;
-            font-size: 48px;
-            color: #333;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin: 20px 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        h2 {
-            font-family: "Arial", sans-serif;
-            font-size: 36px;
-            color: #333;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin: 20px 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-
-    </style>
-</head>
-<body>
-<header>
-    <h1>Korean Bakery</h1>
-    <nav>
-
-        <ul>
-            <li><a href="#inicio">See Stock</a></li>
-            <li><a href="#productos">Make a Purchase</a></li>
-            <li><a href="#contacto">Edit Stock</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section id="inicio">
-    <h2>Welcome to Korean Bakery</h2>
-    <p>Where we praise the lord Kim</p>
-
-</section>
-
-<section id="productos">
-
-</section>
-
-<section id="contacto">
-    <h2>Contact us</h2>
-    <p>Direction: Street 123, RealCityFR</p>
-    <p>Number: 123-456-7890</p>
-</section>
-
-<img src="https://img.freepik.com/vector-premium/coleccion-logos-pasteleria-vintage_23-2148111827.jpg?w=2000" alt="Logo Image">
-
-</body>
-</html>
+    </body>
+</html></html>

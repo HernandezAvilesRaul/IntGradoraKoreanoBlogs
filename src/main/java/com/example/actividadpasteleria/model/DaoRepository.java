@@ -1,6 +1,12 @@
-package model;
+package com.example.actividadpasteleria.model;
 
+import java.util.List;
 
+public interface DaoRepository<T> {
+    List<T> findAll(); //Select * from X;
+    T findOne(int id);//Select * from X where id = paramID
 
-public interface DaoRepository {
+    boolean update(int id, Usuario usr);
+
+    boolean delete(int id); // delete from X where;
 }

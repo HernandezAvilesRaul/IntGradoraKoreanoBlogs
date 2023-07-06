@@ -1,4 +1,4 @@
-package utils;
+package com.example.actividadpasteleria.utils;
 
 import com.mysql.jdbc.Driver;
 import java.sql.Connection;

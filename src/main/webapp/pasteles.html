@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pasteles</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='scripts.js'></script>
+    <style>
+        /* Estilos CSS para la tabla */
+        table {
+          width: 100%;
+          background-color:lemonchiffon; /* Cambia el color de fondo de la tabla aquí */
+        }
+        
+        th, td {
+          padding: 8px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.jsp">
+              <img src="img/cakeicon.png" alt="Logo" height="50px" width="50px">
+              Pastelería Coreano Blogs
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.jsp">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="catalogo.html">Recetas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="registro.jsp">Registrar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Pasteles</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section style="background-color:lightgoldenrodyellow;">
+        <div class="container mt-5">
+            <center><h2 style="font-family: 'Times New Roman', Times, serif;">Tabla de Pasteles Registrados</h2></center>
+            <table id="tabla-pasteles" class="table">
+                <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Sabor</th>
+                    <th>Ingredientes</th>
+                    <th>Cantidad</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <script>
+                // Obtener registros existentes y actualizar la tabla al cargar la página
+                window.onload = function() {
+                    cargarRegistros();
+                };
+                <script>
+
+                    // Función para generar las filas de la tabla con los registros de pasteles
+                    function generarFilasTabla() {
+                    var tabla = document.getElementById("tabla-pasteles");
+                    var tbody = tabla.getElementsByTagName("tbody")[0];
+
+                    // Limpiar el contenido existente de la tabla
+                    tbody.innerHTML = "";
+
+                    // Generar las filas de la tabla basadas en los registros de pasteles
+                    registrosPasteles.forEach(function(pastel) {
+                    var fila = tbody.insertRow();
+                    fila.innerHTML = `<td>${pastel.nombre}</td><td>${pastel.sabor}</td><td>${pastel.ingredientes}</td><td>${pastel.cantidad}</td>`;
+                });
+                }
+
+                    // Llamar a la función para generar las filas de la tabla al cargar la página
+                    window.onload = function() {
+                    generarFilasTabla();
+                };
+            </script>
+
+            </script>
+          </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <center>
+        <span class="text-muted">© 2023 Equipo Coreano Blogs. - Todos los derechos reservados.</span>
+        </center>
+      </div>
+    </footer>
+</body>
+</html></html>
